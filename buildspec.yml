@@ -4,10 +4,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-	commands:
-	  - sudo apt-get update
-	  - curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-	  - sudo apt-get install nodejs
+    commands:
+      - sudo apt-get update
+      - curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+      - sudo apt-get install nodejs
 
   pre_build:
     commands:
@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Building for production
       - npm install --production
-	  - npm start
+      - npm start
 
 artifacts:
   files:
