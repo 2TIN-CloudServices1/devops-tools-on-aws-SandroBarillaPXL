@@ -5,9 +5,9 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
-      - sudo yum update
+      - sudo yum update -y
       - curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
-      - sudo yum install nodejs
+      - sudo yum install nodejs -y
 
   pre_build:
     commands:
