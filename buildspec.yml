@@ -12,12 +12,10 @@ phases:
     commands:
       - echo Running tests
       - npm install
-      - npm test
 
   build:
     commands:
       - echo Building for production
-      - npm install --production
       - npm start
 
 artifacts:
